@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(register|upload|download)/([^/]+)$ /~tobbez/epmem/$1.php?user=$2 [L]
+#RewriteRule /([^/]+)$ ?user=$1
+#RewriteRule /(register|upload|download) $1.php

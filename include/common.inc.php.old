@@ -1,0 +1,11 @@
+<?php
+function GetAppRoot()
+{
+    $tmp_script = $_SERVER["SCRIPT_NAME"];
+    $tmp_last_slash = strrpos($_SERVER["SCRIPT_NAME"], "/");
+    $return_val = substr($tmp_script, 0, 1 + $tmp_last_slash);
+    return $return_val;
+}
+
+
+?>

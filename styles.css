@@ -1,0 +1,28 @@
+#div_content
+{
+    text-align: center;
+}
+
+#div_header
+{
+    font-size: x-small;
+}
+
+hr
+{
+    border: 0;
+    background-color: #888;
+    height: 1px;
+}
+
+td, th
+{
+    margin:.2em;
+    padding:.3em;
+    border:1px solid #ccc;
+}
+
+th
+{
+    background-color:#eee;
+}
